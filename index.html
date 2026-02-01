@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surbhi ❤️ Will You Be My Valentine?</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff4b7d, #ff9a9e);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+    .box {
+      background: rgba(255,255,255,0.15);
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      animation: fadeIn 2s ease;
+      max-width: 420px;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .heart {
+      font-size: 3.5em;
+      animation: beat 1s infinite;
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #ff4b7d;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #ffe6ec;
+    }
+    #reply {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <div class="heart">❤️</div>
+    <h1>Surbhi</h1>
+    <p>
+      Tum meri zindagi ka sabse khoobsurat ehsaas ho 🌹<br>
+      Har din tumhare saath ek naya Valentine lagta hai.
+    </p>
+
+    <p>
+      <b>Surbhi, kya tum meri Valentine banogi? 💍</b><br>
+      I love you so much ❤️
+    </p>
+
+    <button onclick="document.getElementById('reply').style.display='block'">
+      Yes ❤️
+    </button>
+
+    <div id="reply">
+      💖 I knew it! Tum meri duniya ho Surbhi 💖
+    </div>
+  </div>
+
+</body>
+</html>
